@@ -1,5 +1,5 @@
 # Server Ping Display Tool
-[![Join the chat at https://github.com/ROZ-MOFUMOFU-ME/ping/](https://badges.gitter.im/Join%20Chat.svg)](https://matrix.to/ping:gitter.im)
+[![Join the chat at https://github.com/ROZ-MOFUMOFU-ME/ping/](https://badges.gitter.im/Join%20Chat.svg)](https://matrix.to/#/#ping:gitter.im)
 [![Build Status](https://travis-ci.com/ROZ-MOFUMOFU-ME/ping.svg?branch=main)](https://travis-ci.com/ROZ-MOFUMOFU-ME/ping)
 [![CircleCI](https://circleci.com/gh/ROZ-MOFUMOFU-ME/ping/tree/main.svg?style=svg)](https://circleci.com/gh/ROZ-MOFUMOFU-ME/ping/tree/main)
 
