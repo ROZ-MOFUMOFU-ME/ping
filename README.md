@@ -12,7 +12,7 @@ This software is a Node.js application designed to measure and display ping valu
 * **Easy Configuration:** Minimal setup required to get up and running.
 
 ## Getting Started
-Follow these steps to set up and run the Server Ping Display Tool on your machine:
+Follow these steps to set up and run the Server Ping Display Tool:
 
 ### Prerequisites
 * Node.js >=12.22.12 installed on your server
