@@ -134,6 +134,7 @@ $(function () {
 ```
 
 Open your web browser and access to view **http://127.0.0.1/** the ping measurements.
+When the page is displayed, it waits for 5 seconds, then connects to the server and waits an additional 3 seconds before displaying the latency.
 
 ## Contributing
 Contributions are what make the open-source community such a fantastic place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
