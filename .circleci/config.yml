@@ -9,10 +9,10 @@
         ]
     },
     "jobs": {
-        "test-v14": {
+        "test-v12": {
             "docker": [
                 {
-                    "image": "circleci/node:14"
+                    "image": "circleci/node:12"
                 }
             ],
             "steps": [
@@ -22,10 +22,10 @@
                 }
             ]
         },
-        "test-v15": {
+        "test-v14": {
             "docker": [
                 {
-                    "image": "circleci/node:15"
+                    "image": "circleci/node:14"
                 }
             ],
             "steps": [
@@ -47,14 +47,42 @@
                     "run": "npm install"
                 }
             ]
+        },
+        "test-v18": {
+            "docker": [
+                {
+                    "image": "circleci/node:18"
+                }
+            ],
+            "steps": [
+                "checkout",
+                {
+                    "run": "npm install"
+                }
+            ]
+        },
+        "test-v20": {
+            "docker": [
+                {
+                    "image": "circleci/node:20"
+                }
+            ],
+            "steps": [
+                "checkout",
+                {
+                    "run": "npm install"
+                }
+            ]
         }
     },
     "workflows": {
         "build": {
             "jobs": [
+                "test-v12",
                 "test-v14",
-                "test-v15",
-                "test-v16"
+                "test-v16",
+                "test-v18",
+                "test-v20"
             ]
         }
     }
