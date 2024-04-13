@@ -1,7 +1,7 @@
 # Server Ping Display Tool
 [![Join the chat at https://github.com/ROZ-MOFUMOFU-ME/Ping/](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ROZ-MOFUMOFU-ME/Ping?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.com/ROZ-MOFUMOFU-ME/Ping.svg?branch=main)](https://travis-ci.com/ROZ-MOFUMOFU-ME/Ping)
-[![CircleCI](https://circleci.com/gh/ROZ-MOFUMOFU-ME/Ping/tree/main.svg?style=svg)](https://circleci.com/gh/ROZ-MOFUMOFU-ME/Ping/?branch=main)
+[![CircleCI](https://circleci.com/gh/ROZ-MOFUMOFU-ME/ping/tree/main.svg?style=svg)](https://circleci.com/gh/ROZ-MOFUMOFU-ME/ping/tree/main)
 
 ![d0135d961d6d21e4a17a25d210c97793](https://github.com/ROZ-MOFUMOFU-ME/ping/assets/35634920/ff947ec7-ff11-4606-b0fb-35a6ac91eba0)
 
