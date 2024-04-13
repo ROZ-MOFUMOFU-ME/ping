@@ -5,7 +5,8 @@
   "repository": "https://github.com/ROZ-MOFUMOFU-ME/ping",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "cd ping && npm install && node app.js"
   },
   "author": "mofumofu.me",
   "authors": [
