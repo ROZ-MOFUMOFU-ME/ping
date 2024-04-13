@@ -147,22 +147,34 @@ Distributed under the MIT License. See **LICENSE** for more information.
 
 ## Contact
 ROZ-MOFUMOFU-ME - [@ROZ_mofumofu_me](https://twitter.com/ROZ_mofumofu_me)
+
 Aoi Emerauda - [@Aoi_Emerauda](https://twitter.com/Aoi_Emerauda) Alternative
+
 Project Link: [https://github.com/ROZ-MOFUMOFU-ME/ping](https://github.com/ROZ-MOFUMOFU-ME/ping)
 
 ## Donations
 Donations for development are greatly appreciated!
 
 [GitHub Sponsors](https://github.com/sponsors/ROZ-MOFUMOFU-ME)
+
 [Patreon](https://patreon.com/emerauda)
+
 [FANBOX](https://emerauda.fanbox.cc/)
+
 [Fantia](https://fantia.jp/emerauda)
+
 [Buy Me a Coffee](https://buymeacoffee.com/emerauda)
+
 BTC: 3C8oCWjVs2sycQcK3ttiPRSKV4AKBhC7xT
+
 ETH: 0xc664a0416c23b1b13a18e86cb5fdd1007be375ae
+
 LTC: Lh96WZ7Rw9Wf4GDX2KXpzieneZFV5Xe5ou
+
 BCH: pzdsppue8uwc20x35psaqq8sgchkenr49c0qxzazxu
+
 ETC: 0xc664a0416c23b1b13a18e86cb5fdd1007be375ae
+
 
 ## Credits
 [ROZ-MOFUMOFU-ME](https://github.com/ROZ-MOFUMOFU-ME) - Author
