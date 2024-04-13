@@ -148,9 +148,9 @@ Contributions are what make the open-source community such a fantastic place to 
 Distributed under the MIT License. See **LICENSE** for more information.
 
 ## Contact
-ROZ-MOFUMOFU-ME - [@ROZ_mofumofu_me](https://twitter.com/ROZ_mofumofu_me)
+ROZ-MOFUMOFU-ME: [@ROZ_mofumofu_me](https://twitter.com/ROZ_mofumofu_me)
 
-Aoi Emerauda - [@Aoi_Emerauda](https://twitter.com/Aoi_Emerauda) Alternative
+Aoi Emerauda: [@Aoi_Emerauda](https://twitter.com/Aoi_Emerauda) Alternative
 
 Project Link: [https://github.com/ROZ-MOFUMOFU-ME/ping](https://github.com/ROZ-MOFUMOFU-ME/ping)
 
