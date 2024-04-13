@@ -153,7 +153,7 @@ Contributions are what make the open-source community such a fantastic place to 
 Distributed under the MIT License. See **LICENSE** for more information.
 
 ## Contact
-ROZ-MOFUMOFU-ME: [@ROZ_mofumofu_me](https://twitter.com/ROZ_mofumofu_me)
+ROZ: [@ROZ_mofumofu_me](https://twitter.com/ROZ_mofumofu_me)
 
 Aoi Emerauda: [@Aoi_Emerauda](https://twitter.com/Aoi_Emerauda) Alternative
 
@@ -184,6 +184,6 @@ ETC: 0xc664a0416c23b1b13a18e86cb5fdd1007be375ae
 
 
 ## Credits
-[ROZ-MOFUMOFU-ME](https://github.com/ROZ-MOFUMOFU-ME) - Author
+[ROZ](https://github.com/ROZ-MOFUMOFU-ME) - Author
 
 [Aoi Emerauda](https://github.com/emerauda) - Alternative
