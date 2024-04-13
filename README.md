@@ -1,5 +1,7 @@
 # A Server Ping Display Tool
 
+![d0135d961d6d21e4a17a25d210c97793](https://github.com/ROZ-MOFUMOFU-ME/ping/assets/35634920/ff947ec7-ff11-4606-b0fb-35a6ac91eba0)
+
 ## Overview
 This software is a Node.js application designed to measure and display ping values between a browser and your server using socket.io. It provides real-time latency insights, which are essential for network analysis, server monitoring, and troubleshooting connectivity issues.
 
