@@ -43,7 +43,7 @@ npm install
 npm start
 ```
 
-2. Set up a reverse proxy (this is an example configuration for Nginx).
+2. Set up a reverse proxy (this is an example configuration for Nginx):
 ```nginx.conf
 server {
 
