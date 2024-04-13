@@ -1,0 +1,89 @@
+{
+    "version": 2.1,
+    "node-base": {
+        "steps": [
+            "checkout",
+            {
+                "run": "npm install"
+            }
+        ]
+    },
+    "jobs": {
+        "test-v12": {
+            "docker": [
+                {
+                    "image": "circleci/node:12"
+                }
+            ],
+            "steps": [
+                "checkout",
+                {
+                    "run": "npm install"
+                }
+            ]
+        },
+        "test-v14": {
+            "docker": [
+                {
+                    "image": "circleci/node:14"
+                }
+            ],
+            "steps": [
+                "checkout",
+                {
+                    "run": "npm install"
+                }
+            ]
+        },
+        "test-v16": {
+            "docker": [
+                {
+                    "image": "circleci/node:16"
+                }
+            ],
+            "steps": [
+                "checkout",
+                {
+                    "run": "npm install"
+                }
+            ]
+        },
+        "test-v18": {
+            "docker": [
+                {
+                    "image": "cimg/node:18.0"
+                }
+            ],
+            "steps": [
+                "checkout",
+                {
+                    "run": "npm install"
+                }
+            ]
+        },
+        "test-v20": {
+            "docker": [
+                {
+                    "image": "cimg/node:20.0"
+                }
+            ],
+            "steps": [
+                "checkout",
+                {
+                    "run": "npm install"
+                }
+            ]
+        }
+    },
+    "workflows": {
+        "build": {
+            "jobs": [
+                "test-v12",
+                "test-v14",
+                "test-v16",
+                "test-v18",
+                "test-v20"
+            ]
+        }
+    }
+}
