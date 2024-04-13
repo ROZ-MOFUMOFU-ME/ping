@@ -1,4 +1,4 @@
-# A Server Ping Display Tool
+# Server Ping Display Tool
 
 ![d0135d961d6d21e4a17a25d210c97793](https://github.com/ROZ-MOFUMOFU-ME/ping/assets/35634920/ff947ec7-ff11-4606-b0fb-35a6ac91eba0)
 
