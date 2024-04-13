@@ -51,7 +51,7 @@
         "test-v18": {
             "docker": [
                 {
-                    "image": "circleci/node:18"
+                    "image": "cimg/node:18"
                 }
             ],
             "steps": [
@@ -64,7 +64,7 @@
         "test-v20": {
             "docker": [
                 {
-                    "image": "circleci/node:20"
+                    "image": "cimg/node:20"
                 }
             ],
             "steps": [
