@@ -18,8 +18,8 @@ This software is a Node.js application designed to measure and display ping valu
 Follow these steps to set up and run the Server Ping Display Tool:
 
 ### Prerequisites
-* Node.js >=12.22.12 installed on your server
-* npm >=6.14.16
+* Node.js >=12 installed on your server
+* npm >=6
 * Reverse Proxy Server (Recommend Nginx)
 * A modern web browser
 
