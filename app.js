@@ -1,39 +1,45 @@
-const { Server } = require('socket.io');
+const Server = require('socket.io').Server;
 const http = require('http');
-const { execSync } = require('child_process');
+const { exec } = require('child_process');
 
 const server = http.createServer();
 const io = new Server(server);
 
-const serverStartTime = getFormattedTime();
-
 function getFormattedTime() {
-  try {
-    return execSync("date '+%Y/%m/%d %H:%M:%S'").toString().trim();
-  } catch (error) {
-    console.error("Failed to get server time:", error);
-    return "Time Error";
-  }
+  return new Promise((resolve, reject) => {
+    exec("date '+%Y/%m/%d %H:%M:%S'", (error, stdout, stderr) => {
+      if (error) {
+        console.error("Failed to get server time:", stderr);
+        reject("Time Error");
+      } else {
+        resolve(stdout.trim());
+      }
+    });
+  });
 }
 
-function logConnection(action, socket, extraInfo = '') {
-  const dateStr = getFormattedTime();
-  const ip = socket.handshake.headers['x-forwarded-for'] || socket.handshake.address;
-  const origin = (socket.handshake.headers['origin'] || 'unknown origin').replace('https://', '');
-  const logMessage = `${dateStr} ${action} ${ip} [${origin}] ${extraInfo}`;
+async function logConnection(action, socket, extraInfo = '') {
+  try {
+    const dateStr = await getFormattedTime();
+    const ip = socket.handshake.headers['x-forwarded-for'] || socket.conn.remoteAddress;
+    const origin = new URL(socket.handshake.headers['origin'] || 'unknown://unknown').hostname;
+    const logMessage = `${dateStr} ${action} ${ip} [${origin}] ${extraInfo}`;
 
-  switch (action) {
-    case 'CONNECTION':
-      console.info(logMessage);
-      break;
-    case 'DISCONNECT':
-      console.info(logMessage);
-      break;
-    case 'FATALERROR':
-      console.error(logMessage);
-      break;
-    default:
-      console.log(logMessage);
+    switch (action) {
+      case 'CONNECTION':
+        console.info(logMessage);
+        break;
+      case 'DISCONNECT':
+        console.info(logMessage);
+        break;
+      case 'FATALERROR':
+        console.error(logMessage);
+        break;
+      default:
+        console.log(logMessage);
+    }
+  } catch (error) {
+    console.error("Logging error:", error);
   }
 }
 
@@ -49,12 +55,12 @@ io.on('connection', (socket) => {
   });
 
   socket.on('error', (err) => {
-    const errorInfo = `${err}`
-    logConnection('FATALERROR', socket, errorInfo);
+    logConnection('FATALERROR', socket, `${err}`);
   });
 });
 
 const PORT = process.env.PORT || 3000;
-server.listen(PORT, () => {
-  console.log(`${serverStartTime} Server is listening on port ${PORT}`);
+server.listen(PORT, async () => {
+  const startTime = await getFormattedTime();
+  console.log(`${startTime} Server is listening on port ${PORT}`);
 });
