@@ -12,7 +12,7 @@
   "author": "ROZ",
   "license": "MIT",
   "dependencies": {
-    "socket.io": "^4.7.5"
+    "socket.io": "^4.8.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
