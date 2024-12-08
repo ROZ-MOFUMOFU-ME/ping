@@ -2,8 +2,8 @@ const Server = require('socket.io').Server;
 const http = require('http');
 const { exec } = require('child_process');
 
-const server = http.createServer();
-const io = new Server(server);
+const httpServer = http.createServer();
+const io = new Server(httpServer);
 
 function getFormattedTime() {
   return new Promise((resolve, reject) => {
@@ -22,7 +22,7 @@ async function logConnection(action, socket, extraInfo = '') {
   try {
     const dateStr = await getFormattedTime();
     const ip = socket.handshake.headers['x-forwarded-for'] || socket.conn.remoteAddress;
-    const origin = new URL(socket.handshake.headers['origin'] || 'unknown://unknown').hostname;
+    const origin = new URL(socket.handshake.headers['origin'] || 'http://localhost').hostname;
     const logMessage = `${dateStr} ${action} ${ip} [${origin}] ${extraInfo}`;
 
     switch (action) {
@@ -60,7 +60,11 @@ io.on('connection', (socket) => {
 });
 
 const PORT = process.env.PORT || 3000;
-server.listen(PORT, async () => {
+httpServer.listen(PORT, async () => {
   const startTime = await getFormattedTime();
   console.log(`${startTime} Server is listening on port ${PORT}`);
+}).on('error', (err) => {
+  console.error('Failed to start server:', err);
 });
+
+module.exports = httpServer;
